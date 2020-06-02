@@ -1,0 +1,19 @@
+Pesho:{
+height: 120
+weight: 45
+age: 16
+}
+
+Ivan:{
+height: 190
+weight: 90
+age: 40
+}
+
+
+Pe6o:{
+height: 120
+weight: 50
+age: 60
+}
+
