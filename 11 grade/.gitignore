@@ -27,8 +27,8 @@ x86/
 [Aa][Rr][Mm]64/
 bld/
 [Oo]bj/
-[Oo]bj/*.exe
-[Oo]bj/*.config
+[Dd]ebug/*.exe
+[Dd]ebug/*.config
 [Ll]og/
 [Ll]ogs/
 
