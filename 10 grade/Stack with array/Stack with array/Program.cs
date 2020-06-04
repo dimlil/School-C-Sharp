@@ -13,8 +13,16 @@ namespace Stack_with_array
         static int top = 0;
         static void Push(int element)
         {
-            stack[top + 1]=element;
-            top++;
+            if (Full())
+            {
+                Full();
+            }
+            else
+            {
+                stack[top] = element;
+                top++;
+            }
+
         }
         static void Pop()
         {
@@ -23,15 +31,29 @@ namespace Stack_with_array
         }
         static void Empty()
         {
-            if(top==0){
+            if (top == 0)
+            {
                 Console.WriteLine("Stack is empty");
+
             }
         }
-        static void Full()
+        static bool Full()
         {
-            if (top>Max)
+            if (top >= Max)
             {
                 Console.WriteLine("Stack is full");
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        static void Print()
+        {
+            for (int i = 0; i < stack.Length; i++)
+            {
+                Console.WriteLine(stack[i]);
             }
         }
         static void Main(string[] args)
@@ -43,6 +65,7 @@ namespace Stack_with_array
             Push(40);
             Push(50);
             Full();
+            Print();
         }
     }
 }
